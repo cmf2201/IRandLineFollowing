@@ -3,6 +3,7 @@
 #include <IRdecoder.h>
 #include <RemoteConstants.h>
 #include <Chassis.h>
+#include "test/ChassisImpl.h"
 
 
 QTRSensors qtr;
@@ -138,12 +139,15 @@ void setup()
 void loop()
 {
   
-  checkRemote();
+  // checkRemote();
 
-  if(lineFollowOn)
-  {
-    lineFollow();
-  }
+  // if(lineFollowOn)
+  // {
+  //   lineFollow();
+  // }
+
+
+  Serial.println(testingFunction(true));
     // delay(100);
   // read calibrated sensor values and obtain a measure of the line position
   // from 0 to 5000 (for a white line, use readLineWhite() instead)
